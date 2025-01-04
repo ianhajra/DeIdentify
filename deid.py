@@ -75,7 +75,7 @@ def process_data(df):
 
         # Write the processed DataFrame to a new Excel file
         try:
-            processed_df.to_excel("/app/output/processed_output.xlsx", index=False)
+            processed_df.to_excel("output/processed_output.xlsx", index=False)
             print("Processed data written to 'processed_output.xlsx'.")
         except Exception as e:
             print(f"An error occurred while writing the file: {e}")
