@@ -1,2 +1,4 @@
 # Ignore all excel files
 *.xlsx
+
+**/.DS_Store
