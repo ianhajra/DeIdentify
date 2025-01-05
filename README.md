@@ -44,3 +44,9 @@ After making changes to your code, or to simply run the program, follow these st
 # Dependencies
 
 This program requires that you have `Python 3` or later, as well as the `pandas` and `openpyxl` libraries installed. 
+
+`Python 3` must be installed from the online download. The libraries can be installed afterwards, running:
+
+```bash
+pip install pandas openpyxl
+```
