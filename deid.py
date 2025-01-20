@@ -42,6 +42,9 @@ def process_row(row):
         
         # Remove Radiologist
         row[6] = re.sub(r"(RADIOLOGIST:\s*).*?(?=ACCESSION_REDACT)", r"\1NAME_REDACT\\n\\n", row[6])
+        
+        # Remove any remaining 6 or 7 digit numbers
+        row[6] = re.sub(r"\b\d{6,7}\b", "NUMBER_REDACT", row[6])
 
     return row
 
